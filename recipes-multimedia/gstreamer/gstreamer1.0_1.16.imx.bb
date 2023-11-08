@@ -59,6 +59,7 @@ def gettext_oemeson(d):
 EXTRA_OEMESON += " \
     -Dexamples=disabled \
     -Ddbghelp=disabled \
+    -Dgtk_doc=disabled \
     ${@gettext_oemeson(d)} \
 "
 
