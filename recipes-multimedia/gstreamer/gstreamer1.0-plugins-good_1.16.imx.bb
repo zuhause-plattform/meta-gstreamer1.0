@@ -72,6 +72,7 @@ EXTRA_OEMESON += " \
     -Dtwolame=disabled \
     -Dwaveform=disabled \
     -Dgtk_doc=disabled \
+    -Dintrospection=enabled \
 "
 
 FILES_${PN}-equalizer += "${datadir}/gstreamer-1.0/presets/*.prs"

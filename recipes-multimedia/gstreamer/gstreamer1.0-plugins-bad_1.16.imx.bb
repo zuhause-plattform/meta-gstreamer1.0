@@ -156,6 +156,7 @@ EXTRA_OEMESON += " \
     -Dwpe=disabled \
     -Dx265=disabled \
     -Dzbar=disabled \
+    -Dintrospection=enabled \
     ${@bb.utils.contains("TUNE_FEATURES", "mx32", "-Dyadif=disabled", "", d)} \
     -Dgtk_doc=disabled \
 "

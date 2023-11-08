@@ -80,6 +80,7 @@ EXTRA_OEMESON += " \
     ${@get_opengl_cmdline_list('gl_platform', d.getVar('OPENGL_PLATFORMS'), d)} \
     ${@get_opengl_cmdline_list('gl_winsys', d.getVar('OPENGL_WINSYS'), d)} \
     -Dgtk_doc=disabled \
+    -Dintrospection=enabled \
     -Dextra_imx_incdir=${STAGING_INCDIR_IMX} \
 "
 
