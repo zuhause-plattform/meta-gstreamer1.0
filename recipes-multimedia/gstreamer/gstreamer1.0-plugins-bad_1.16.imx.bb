@@ -157,6 +157,7 @@ EXTRA_OEMESON += " \
     -Dx265=disabled \
     -Dzbar=disabled \
     ${@bb.utils.contains("TUNE_FEATURES", "mx32", "-Dyadif=disabled", "", d)} \
+    -Dgtk_doc=disabled \
 "
 
 export OPENCV_PREFIX = "${STAGING_DIR_TARGET}${prefix}"
