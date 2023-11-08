@@ -67,7 +67,6 @@ EXTRA_OECONF += " \
     --disable-oss4 \
     --disable-osx_audio \
     --disable-osx_video \
-    --disable-qt \
     --disable-shout2 \
     --disable-twolame \
     --disable-waveform \
