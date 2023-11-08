@@ -36,15 +36,17 @@ DEPENDS += "gstreamer1.0-plugins-base"
 
 inherit gobject-introspection
 
-PACKAGECONFIG ??= " \
-    ${GSTREAMER_ORC} \
-    ${@bb.utils.contains('DISTRO_FEATURES', 'bluetooth', 'bluez', '', d)} \
-    ${@bb.utils.filter('DISTRO_FEATURES', 'directfb vulkan', d)} \
-    ${@bb.utils.contains('DISTRO_FEATURES', 'wayland', 'wayland', '', d)} \
-    ${@bb.utils.contains('DISTRO_FEATURES', 'opengl', 'gl', '', d)} \
-    bz2 closedcaption curl dash dtls hls rsvg sbc smoothstreaming sndfile \
-    ttml uvch264 webp \
-"
+# PACKAGECONFIG ??= " \
+#     ${GSTREAMER_ORC} \
+#     ${@bb.utils.contains('DISTRO_FEATURES', 'bluetooth', 'bluez', '', d)} \
+#     ${@bb.utils.filter('DISTRO_FEATURES', 'directfb vulkan', d)} \
+#     ${@bb.utils.contains('DISTRO_FEATURES', 'wayland', 'wayland', '', d)} \
+#     ${@bb.utils.contains('DISTRO_FEATURES', 'opengl', 'gl', '', d)} \
+#     bz2 closedcaption curl dash dtls hls rsvg sbc smoothstreaming sndfile \
+#     ttml uvch264 webp \
+# "
+
+PACKAGECONFIG = "webrtc webrtcdsp"
 
 PACKAGECONFIG[assrender]       = "-Dassrender=enabled,-Dassrender=disabled,libass"
 PACKAGECONFIG[bluez]           = "-Dbluez=enabled,-Dbluez=disabled,bluez5"
