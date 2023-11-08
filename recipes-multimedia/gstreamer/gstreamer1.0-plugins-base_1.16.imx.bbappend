@@ -1,1 +1,1 @@
-PACKAGECONFIG += "opus"
+PACKAGECONFIG += "opus ogg alsa"
