@@ -46,7 +46,7 @@ inherit gobject-introspection
 #     ttml uvch264 webp \
 # "
 
-PACKAGECONFIG = "webrtc webrtcdsp opusparse dtls"
+PACKAGECONFIG = "webrtc webrtcdsp opusparse srtp dtls"
 
 PACKAGECONFIG[assrender]       = "-Dassrender=enabled,-Dassrender=disabled,libass"
 PACKAGECONFIG[bluez]           = "-Dbluez=enabled,-Dbluez=disabled,bluez5"
