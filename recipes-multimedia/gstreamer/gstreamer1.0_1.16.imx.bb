@@ -60,6 +60,7 @@ EXTRA_OEMESON += " \
     -Dexamples=disabled \
     -Ddbghelp=disabled \
     -Dgtk_doc=disabled \
+    -Dintrospection=enabled \
     ${@gettext_oemeson(d)} \
 "
 
