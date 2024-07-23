@@ -22,6 +22,7 @@ inherit meson pkgconfig upstream-version-is-even gobject-introspection
 EXTRA_OEMESON += " \
     -Dexamples=disabled \
     -Dtests=disabled \
+    -Dintrospection=enabled \
 "
 
 GIR_MESON_ENABLE_FLAG = "enabled"
